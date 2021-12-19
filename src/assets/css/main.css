@@ -75,99 +75,96 @@
   position: relative;
   height: 844px;
   background: url("../img/bg_section_1.jpg") center no-repeat;
-  background-size: 1920px 1164px; }
-  .scroll__section1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000); }
+  background-size: 1920px 844px; }
   .scroll__section1 .section1__box1 {
     position: absolute;
-    top: 119px;
+    top: 161px;
     right: 0;
-    left: 0; }
+    left: 50%;
+    width: 389px;
+    height: 134px;
+    margin-left: -194.5px; }
   .scroll__section1 .section1__box2 {
     position: absolute;
-    top: 229px;
+    top: 238px;
     right: 22px;
-    left: 22px; }
+    left: 50%;
+    width: 1175px;
+    height: 606px;
+    margin-left: -587.5px; }
   .scroll__section1 .section1__box3 {
     position: absolute;
-    top: 599px;
+    top: 726px;
     right: 0;
-    left: 0; }
+    left: 50%;
+    width: 200px;
+    height: 47px;
+    margin-left: -100px; }
+    .scroll__section1 .section1__box3 a {
+      display: block; }
 
 .scroll__section2 {
-  height: 406px;
-  background-color: #000; }
+  height: 399px;
+  background: url("../img/bg_section_2.jpg") center #000 no-repeat;
+  background-size: 956px 381px; }
   .scroll__section2 .section2__box1 {
     position: absolute;
-    top: 0;
+    top: 124px;
     left: 50%;
-    width: 390px;
-    height: 207px;
-    margin-left: -195px; }
-  .scroll__section2 .section2__box2 .box {
-    position: absolute;
-    top: 220px;
-    right: 20px;
-    left: 20px; }
-    .scroll__section2 .section2__box2 .box p {
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 18px;
-      color: #fff;
-      text-align: center;
-      line-height: 24px; }
+    width: 322px;
+    height: 117px;
+    margin-left: -161px; }
+    .scroll__section2 .section2__box1 .box {
+      position: relative;
+      z-index: 10; }
+    .scroll__section2 .section2__box1::before, .scroll__section2 .section2__box1::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 5; }
+    .scroll__section2 .section2__box1::before {
+      top: -86px;
+      left: -36px;
+      width: 147px;
+      height: 184px;
+      background: url("../img/bg_section_2_card1.png") no-repeat;
+      background-size: 147px 184px; }
+    .scroll__section2 .section2__box1::after {
+      top: 48px;
+      right: -36px;
+      width: 161px;
+      height: 180px;
+      background: url("../img/bg_section_2_card2.png") no-repeat;
+      background-size: 161px 180px; }
 
 .scroll__section5 {
-  height: 1474px;
-  background: url("../img/bg_section_5.jpg") #000 center no-repeat;
-  background-size: 1920px 1651px; }
-  .scroll__section5 .section5__box1 {
-    position: absolute;
-    top: 339px;
-    right: 0;
-    left: 0; }
+  height: 848px;
+  background-color: #000; }
   .scroll__section5 .section5__box2 .metalink {
     position: absolute;
-    top: 767px;
+    top: 237px;
     left: 50%;
     transform: translateX(-50%);
-    width: 236px;
+    width: 250px;
     height: 500px;
-    padding: 4px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    border-radius: 22px;
-    border: solid 1px #707070; }
-    .scroll__section5 .section5__box2 .metalink__title {
-      width: 206px;
-      height: 24px;
-      margin: 11px auto 25px;
-      background: url("../img/bg_metalink_title.png") center no-repeat;
-      background-size: 206px 24px; }
-    .scroll__section5 .section5__box2 .metalink__inner {
-      height: 100%;
-      border-radius: 19px;
-      border: solid 1px #707070; }
+    background: url("../img/bg_section_5_box2.png") no-repeat;
+    background-size: 250px 500px; }
     .scroll__section5 .section5__box2 .metalink__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 0 20px; }
+      padding: 54px 25px; }
     .scroll__section5 .section5__box2 .metalink__item {
       width: 50%;
-      margin-bottom: 6px;
       text-align: center; }
+      .scroll__section5 .section5__box2 .metalink__item:first-child {
+        width: 100%; }
     .scroll__section5 .section5__box2 .metalink__img {
-      width: 80px;
-      height: 80px;
+      width: 76px;
+      height: 76px;
       margin: 0 auto;
       background: url("../img/bg_metalink.png") center no-repeat;
-      background-size: 90px 90px; }
+      background-size: 76px 76px; }
     .scroll__section5 .section5__box2 .metalink__name {
       display: block;
       overflow: hidden;
@@ -181,9 +178,54 @@
     .scroll__section5 .section5__box2 .metalink__link {
       display: block;
       text-decoration: none; }
-      .scroll__section5 .section5__box2 .metalink__link:hover .metalink__img {
-        background: url("../img/bg_metalink_on.png") center no-repeat;
-        background-size: 90px 90px; }
+
+.ly_vote {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  max-width: 390px;
+  height: 1413px;
+  margin: 0 auto; }
+  .ly_vote_box {
+    position: relative; }
+    .ly_vote_box img {
+      width: 100%; }
+  .ly_vote_link {
+    position: absolute;
+    right: 73px;
+    bottom: 28px;
+    left: 75px;
+    display: block;
+    height: 57px; }
+  .ly_vote_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px; }
+    .ly_vote_close::before, .ly_vote_close::after {
+      position: absolute;
+      top: -2px;
+      left: 7px;
+      width: 1px;
+      height: 20px;
+      background-color: #fff;
+      content: ''; }
+    .ly_vote_close::before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .ly_vote_close::after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .ly_vote.on {
+    display: block; }
 
 .section1__box1.bounceInfinite {
   -webkit-animation: fadeInUp 0.5s both, bounceInfinite 1s infinite alternate;
