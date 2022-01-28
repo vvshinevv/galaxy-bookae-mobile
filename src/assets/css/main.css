@@ -141,15 +141,17 @@
       left: -36px;
       width: 147px;
       height: 184px;
-      background: url("../img/bg_section_2_card1.png") no-repeat;
-      background-size: 147px 184px; }
+      /* background: url("../img/bg_section_2_card1.png") no-repeat; */
+      /* background-size: 147px 184px;  */
+    }
     .scroll__section2 .section2__box1::after {
       top: 48px;
       right: -36px;
       width: 161px;
       height: 180px;
-      background: url("../img/bg_section_2_card2.png") no-repeat;
-      background-size: 161px 180px; }
+      /* background: url("../img/bg_section_2_card2.png") no-repeat; */
+      /* background-size: 161px 180px;  */
+    }
 
 .scroll__section5 {
   height: 848px;
